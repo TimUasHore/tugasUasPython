@@ -1,13 +1,18 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Send Receive images using flask</title>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-
+<h2>Tugas UAS</h2>
+<h3>Kelompok Team UAS Hore :</h3>
+<li>Fariz Setiawan (17.01.53.0001)</li>
+<li>Gilang Fadhillah R(17.01.53.0083)</li>
+<br><br>
 <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
 
     <strong>File Foto / Gambar :</strong><br>
@@ -16,11 +21,11 @@
             <input id="file-picker" type="file" name="file" accept="image/*" multiple><br>
             <div id="msg"></div><br>
             <input type="submit" value="Upload!" id="upload-button" class="btn btn-primary">
-        </div> 
-        
+        </div>
+
     </div>
-    
-    
+
+
 </form>
 </body>
 <script>
